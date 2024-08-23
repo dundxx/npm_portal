@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import SearchInput from "./SearchInput";
+
 
 export default function Header() {
   return (
@@ -9,9 +9,7 @@ export default function Header() {
           NPM Registry
         </Link>
       </div>
-      <div className="w-full max-w-xl ml-4">
-        <SearchInput />
-      </div>
+
     </div>
   );
 }

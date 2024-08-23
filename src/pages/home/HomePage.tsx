@@ -1,5 +1,6 @@
 import type { HomeLoaderResult } from "./homeLoader";
 import { useLoaderData, Link } from "react-router-dom";
+import SearchInput from "../../components/SearchInput";
 
 export default function HomePage() {
   const { featuredPackages } = useLoaderData() as HomeLoaderResult;
@@ -34,6 +35,9 @@ export default function HomePage() {
         <p className="mx-auto max-w-[600px] text-gray-500">
           The package manager for Javascript. Search and view packages.
         </p>
+        <div className="flex items-center justify-center">
+        <SearchInput />
+        </div>
       </div>
       <div className="mx-auto grid grid-cols-4 max-w-[900px] items-stretch gap-4">
         {renderedPackages}
